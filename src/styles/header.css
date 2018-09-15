@@ -1,0 +1,156 @@
+.header {
+    display: grid;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../assets/citycloud-4820x3220.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 88% 20%;
+}
+
+.bars {
+    position: absolute;
+    font-size: 400%;
+    top: 15px;
+    right: 44vw;
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border: 1px outset transparent;
+}
+
+.bars:hover {
+    border: 1px outset rgb(255, 255, 255);
+}
+
+.brand-wrapper {
+    display: flex;
+    justify-content: center;
+    text-shadow: 0px 0px 10px #000;
+    align-items: flex-end;
+}
+
+.brand-wrapper>a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 270%;
+}
+
+.slogan {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-top: 3%;
+    color: #fff;
+    text-shadow: 0px 0px 4px #000;
+    font-size: 133%;
+}
+
+.slogan-button {
+    cursor: pointer;
+    align-self: flex-start;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    background-color: transparent;
+    white-space: nowrap;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    line-height: 43px;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 10px 20px;
+    height: 40px;
+    color: #fff;
+    text-shadow: 0px 0px 2px black;
+    transition: all .1s ease-in;
+}
+
+.slogan-button:hover {
+    font-weight: 700;
+    border: 2px solid #fff;
+    background-color: rgb(255, 255, 255, 0.3);
+}
+
+.navbar {
+    display: none;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding-left: 0px;
+    width: 80vw;
+    list-style: none;
+}
+
+.navbar>li {
+    float: left;
+    font-size: 1.7rem;
+    padding: 0% 5% 0% 5%;
+}
+
+.navbar>li>a {
+    text-shadow: 0px 0px 2px #000;
+    color: #fff;
+    text-decoration: none;
+    border: 1px outset transparent;
+}
+
+.navbar>li>a:hover {
+    border: 1px outset rgb(255, 255, 255);
+}
+
+@media(min-width: 550px) {
+    .header {
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    .brand-wrapper>a {
+        font-size: 10vw;
+    }
+
+    .slogan {
+        font-size: 4vw;
+    }
+
+    .navbar {
+        display: flex;
+    }
+
+    .navbar>li {
+        font-size: 2em;
+    }
+
+    .bars {
+        display: none;
+    }
+
+    #sidebar_div {
+        display: none;
+    }
+
+    .sidebar_innerlist a {
+        font-size: 230%;
+        text-decoration: none;
+        color: rgb(30,30,30);
+        display: block;
+    }
+
+    .slogan-button {
+        align-self: center;
+        font-size: 3.5vw;
+    }
+}
+
+@media(min-width: 1000px) {
+    .brand-wrapper>a {
+        font-size: 100px;
+    }
+
+    .slogan {
+        font-size: 40px;
+    }
+}

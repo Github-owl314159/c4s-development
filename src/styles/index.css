@@ -1,0 +1,10 @@
+html {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+body {
+    font-weight: 300;
+    line-height: 1.4;
+    margin: auto;
+    width: 100%;
+}
